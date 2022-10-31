@@ -1,0 +1,127 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+env:
+  # TERM variable
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  TERM: xterm-256color
+
+window:
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  padding:
+    x: 15
+    y: 15
+
+  # Window decorations
+  #
+  # Values for `decorations`:
+  #     - full: Borders and title bar
+  #     - none: Neither borders nor title bar
+  #
+  # Remove buttons
+  decorations: Buttonless
+  # Open in full screen
+  startup_mode: Windowed
+  #Maximized, Fullscreen, SimpleFullscreen
+  # Dimensions if not SimpleFullscreen
+  dimensions:
+    columns: 130
+    lines: 40
+
+  # Window title
+  title: Alacritty
+
+  # Allow terminal applications to change Alacritty's window title.
+  dynamic_title: true
+
+  # Window class (Linux/BSD only):
+  class:
+    # Application instance name
+    instance: Alacritty
+    # General application class
+    general: Alacritty
+
+  # Background opacity
+  #
+  # Window opacity as a floating point number from `0.0` to `1.0`.
+  # The value `0.0` is completely transparent and `1.0` is opaque.
+  opacity: 0.98
+
+  #scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+
+  # Scrolling distance multiplier.
+  multiplier: 3
+
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    family: hack nerd font
+    style: Regular
+
+  size: 20
+
+# Colors (Dracula)
+colors:
+  background: "0x001e26"
+foreground: "0x708183"
+cursor: "0x708183"
+selection_background: "0x002731"
+color0: "0x002731"
+color8: "0x001e26"
+color1: "0xd01b24"
+color9: "0xbd3612"
+color2: "0x728905"
+color10: "0x465a61"
+color3: "0xa57705"
+color11: "0x52676f"
+color4: "0x2075c7"
+color12: "0x708183"
+color5: "0xc61b6e"
+color13: "0x5856b9"
+color6: "0x259185"
+color14: "0x81908f"
+color7: "0xe9e2cb"
+color15: "0xfcf4dc"
+selection_foreground: "0x001e26"
+
+  # Indexed Colors
+  #
+  # The indexed colors include all colors from 16 to 256.
+  # When these are not set, they're filled with sensible defaults.
+  #
+  # Example:
+  #   `- { index: 16, color: '0xff00ff' }`
+  #
+
+
+
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # window is not focused.
+  unfocused_hollow: true
+
+selection:
+  # This string contains all characters that are used as separators for
+  # "semantic words" in Alacritty.
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+
+  # When true, selected text will be copied to the primary clipboard
+  save_to_clipboard: true
+
+mouse:
+  # If this is `true`, the cursor is temporarily hidden when typing.
+  hide_when_typing: true
+
+shell:
+  program: /bin/zsh
+  args:
+    - --login
+# Startup directory, unset or None for home directory
+working_directory: None
