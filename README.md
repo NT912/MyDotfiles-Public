@@ -81,7 +81,7 @@ vi ~/.zshrc
 
 [Color LS](https://github.com/athityakumar/colorls)
 
-<img >
+<img src="https://github.com/NT912/MyDotfiles-Public/blob/main/img/Screenshot%202022-11-01%20at%2008.27.24.png">
 
 1. Install Ruby (preferably, version >= 2.6)
 2. [Download](https://www.nerdfonts.com/font-downloads) and install a Nerd Font. Have a look at the [Nerd Font README](https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md) for installation instructions.
@@ -148,10 +148,6 @@ CMake hints for inspecting the build:
 - `build/compile_commands.json` shows the full compiler invocations for each translation unit.
 
 # My [config](https://github.com/NT912/MyNvimNew) with lua
-
-<img >
-<img >
-<img >
 
 [Karabiner](https://github.com/pqrs-org/Karabiner-Elements)
 
