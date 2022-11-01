@@ -147,7 +147,7 @@ CMake hints for inspecting the build:
 - `build/CMakeCache.txt` (or `cmake -LAH build/`) contains the resolved values of all CMake variables.
 - `build/compile_commands.json` shows the full compiler invocations for each translation unit.
 
-# My [config](https://github.com/NT912/MyNvimNew) with lua
+# My [Nvim config](https://github.com/NT912/MyNvimNew) with lua
 
 [Karabiner](https://github.com/pqrs-org/Karabiner-Elements)
 
